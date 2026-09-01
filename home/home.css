@@ -73,6 +73,8 @@ a {
     font-weight: 700;
     font-size: 1.2em;
 
+    text-transform: uppercase;
+
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
