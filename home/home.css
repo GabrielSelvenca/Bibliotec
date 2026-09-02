@@ -1,15 +1,13 @@
 a {
     color: var(--branco);
-    text-decoration: inline;
-    text-decoration-color: transparent;
-
-    transition: text-decoration-color ease-in-out;
+    text-decoration: none;
 }
 
 .cabecalho {
     background-color: var(--azul-escuro);
 
     display: flex;
+
     justify-content: space-between;
 
     align-items: center;
@@ -35,7 +33,9 @@ a {
 
 .banner-principal {
     color: var(--branco);
+
     height: 70vh;
+
     background-image: url(../imgs/banner-principal-home.png);
     background-size: cover;
 
@@ -48,42 +48,192 @@ a {
 
 .texto-banner {
     height: 100%;
-
+    
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
     align-items: flex-start;
-
+    justify-content: center;
     gap: 50px;
 }
 
 .texto-banner p {
     font-size: 1.5em;
-    width: 50%;
+    width: 60%;
 }
 
 .botao {
     padding: 20px 50px;
 
     border-radius: 10px;
+
     background-color: var(--cor-destaque);
-    color: var(--texto);
+    color: var(--azul-escuro);
 
-    font-weight: 700;
     font-size: 1.2em;
-
+    font-weight: 700;
     text-transform: uppercase;
-
-    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .botao:hover {
     background-color: #2ab2ab;
-    color: var(--branco)
+    color: var(--branco);
 }
 
 .banner-principal img {
     align-self: flex-end;
     width: 35%;
+}
+
+.titulo-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-secao {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.titulo-secao span {
+    display: flex;
+    width: 250px;
+    height: 4px;
+    background-color: var(--cor-destaque);
+}
+
+.beneficios {
+    padding: 50px 120px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 100px;
+}
+
+.beneficios-lista {
+    display: grid;
+
+    grid-template-columns: repeat(3, 20%);
+
+    gap: 10%;
+
+    justify-content: center;
+    
+}
+
+.beneficio {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px 50px;
+
+    border: 1px solid var(--azul-escuro);
+    border-radius: 30px;
+
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+
+    position: relative;
+}
+
+.beneficio-icone img {
+    width: 50%;
+}
+
+.beneficio-icone {
+    border: 4px solid var(--cor-destaque);
+    background-color: var(--branco);
+
+    border-radius: 50%;
+
+    width: 30%;
+    height: 30%;
+
+    position: absolute;
+
+    top: -15%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: grid;
+
+    place-items: center;
+}
+
+.beneficio h3 {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.beneficio p {
+    font-size: 1em;
+    width: 80%;
+}
+
+.banner-meio {
+    height: 60vh;
+
+    background-image: url(../imgs/Banner\ centro.svg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 0 120px;
+    color: var(--branco);
+}
+
+.livros-lista {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 50px;
+}
+
+.livro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.livro h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.livro img {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+}
+
+.livro-info {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.rodape {
+    padding: 100px;
+    background-color: var(--azul-escuro);
+}
+
+.rodape span {
+    background-color: var(--branco);
 }

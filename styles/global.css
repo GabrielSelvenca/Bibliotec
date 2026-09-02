@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 :root {
-    --azul-escuro: #26333D;
-    --texto: #26333D;
-    --branco: #fff;
-    --cor-destaque: #2FD6CB;
+    --azul-escuro: #26333d;
+    --texto: #26333d;
+    --branco: #ffffff;
+    --cor-destaque: #2fd6cb;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
