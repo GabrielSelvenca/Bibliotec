@@ -230,7 +230,8 @@ a {
 }
 
 .rodape {
-    padding: 100px;
+    padding: 50px 100px;
+    padding-top: 100px;
     background-color: var(--azul-escuro);
 
     display: flex;
@@ -268,10 +269,9 @@ a {
 
 .links-rodape {
     display: grid;
-    width: 40%;
 
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    grid-template-columns: 1fr .8fr;    
+    gap: 50px 150px;
 }
 
 .links {
