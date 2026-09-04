@@ -9,9 +9,11 @@
 
 :root {
     --azul-escuro: #26333d;
+    --azul-escuro-hover: #344957;
     --texto: #26333d;
     --branco: #ffffff;
     --cor-destaque: #2fd6cb;
+    --fundos: #E9F0EF
 }
 
 html {
@@ -22,4 +24,37 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--branco);
     color: var(--texto);
+}
+
+a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.cabecalho {
+    background-color: var(--azul-escuro);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 120px;
+
+    height: 10vh;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.navegacao a {
+    text-transform: uppercase;
+
+    font-size: 1em;
+    font-weight: 500;
 }
