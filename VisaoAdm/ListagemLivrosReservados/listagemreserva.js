@@ -1,6 +1,6 @@
 const checkboxs = document.querySelectorAll('#check-reserva');
-// const listaReservas = document.getElementsByClassName('lista-reservas');
-// const qtdReserva = document.getElementsByClassName('quantidade-reservas');
+const listaReservas = document.querySelector('.lista-reservas');
+const qtdReserva = document.querySelector('.quantidade-reservas');
 
 checkboxs.forEach(checkbox => {
     checkbox.addEventListener("change", (event) => {
@@ -19,3 +19,12 @@ checkboxs.forEach(checkbox => {
         }
     })
 });
+
+function atualizarContador() {
+    const itemsReserva = [...listaReservas.children];
+    const visiveis = itemsReserva.filter(item => !item.classList.contains('oculto')).length;
+
+    qtdReserva.textContent = `Mostando ${visiveis} de ${itemsReserva.length} na lista`
+}
+
+atualizarContador()

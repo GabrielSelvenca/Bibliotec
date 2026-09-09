@@ -361,3 +361,7 @@ input[type="checkbox"]:checked::after {
     font-weight: 0.8em;
     font-weight: 700;
 }
+
+.oculto {
+    display: none;
+}
