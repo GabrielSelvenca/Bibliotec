@@ -13,7 +13,8 @@
     --texto: #26333d;
     --branco: #ffffff;
     --cor-destaque: #2fd6cb;
-    --fundos: #E9F0EF
+    --fundos: #E9F0EF;
+    --textos-paginas: #535353;
 }
 
 html {
