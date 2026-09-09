@@ -226,13 +226,13 @@
     font-size: 1em;
 }
 
-.lista-livros {
+.lista-reservas {
     display: flex;
     flex-direction: column;
     gap: 10px
 }
 
-.livro {
+.reserva {
     display: grid;
     grid-template-columns: 2fr repeat(4, 1fr);
 
@@ -247,10 +247,20 @@
     border-radius: 10px;
 
     font-size: 1em;
+
+    text-align: center;
 }
 
-.livro p:nth-child(1) {
+.reserva p:nth-child(1) {
     justify-self: flex-start;
+}
+
+.reserva .status-reserva {
+    color: #D34A00;
+}
+
+.reserva .retirado {
+    color: #00A223;
 }
 
 input[type="checkbox"] {
@@ -313,7 +323,7 @@ input[type="checkbox"]:checked::after {
     grid-template-columns: 1fr auto;
 }
 
-.quantidade-livros {
+.quantidade-reservas {
     font-size: 0.8em;
     color: var(--textos-paginas);
     font-weight: 600;
