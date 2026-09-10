@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Livros</title>
+    <link rel="stylesheet" href="cadastrar.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+
+    <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body class="pagina-listagem">
+    <aside class="menu-lateral">
+        <div class="topo-menu">
+            <button class="botao-voltar">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <img class="logo" src="../../imgs/Logo Vertical - clara.svg" alt="">
+        </div>
+
+        <nav class="menu-navegacao">
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user"></i>
+                <span>Perfil</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Cadastrar Usuário</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Listar Usuários</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-book-medical"></i>
+                <span>Cadastrar Livro</span>
+            </a>
+
+            <a href="../ListagemLivros/listagem.html" class="item-menu ativo">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span>Listar Livros</span>
+            </a>
+
+            <a href="../ListagemLivrosReservados/listagemreserva.html" class="item-menu">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Livros Reservados</span>
+            </a>
+        </nav>
+
+        <!-- SAIR -->
+        <a href="../../login/login.html" class="botao-sair">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sair</span>
+        </a>
+    </aside>
+
+    <main class="conteudo-listagem">
+        <section class="cabecalho-pagina">
+            <h1>Cadastrar livro</h1>
+            <p>Gerencie e acompanhe os livros cadastrados</p>
+        </section>
+
+
+        <section class="card-listagem">
+            <form>
+                <div class="campos-pequenos">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Ex.: Dom Casmurro">
+                    </div>
+                    <div class="campo">
+                        <label for="foto">Foto da capa</label>
+                        <input type="file" id="foto">
+                    </div>
+                    <div class="campo">
+                        <label for="escritor">Escritor(a)</label>
+                        <input type="text" id="escritor" placeholder="Ex.: Machado de Assis">
+                    </div>
+                    <div class="campo">
+                        <label for="idioma">Idioma</label>
+                        <input type="text" id="idioma" placeholder="Ex.: Português">
+                    </div>
+                    <div class="campo">
+                        <label for="editora">Editora</label>
+                        <input type="text" id="editora" placeholder="Ex.: Companhia de Letras">
+                    </div>
+                    <div class="campo">
+                        <label for="categorias">Categorias</label>
+                        <select name="categorias" id="categorias">
+                            <option disabled selected>Escolha uma categoria</option>
+                            <option value="TI">TI</option>
+                            <option value="Fantasia">Fantasia</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Romance">Romance</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="listagemreserva.js"></script>
+</body>
+
+</html>

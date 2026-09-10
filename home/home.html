@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="home.css">
     <link rel="shortcut icon" href="../imgs/Icone - Bibliotec.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/global.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -22,6 +24,10 @@
             <a href="#acervo">Nosso acervo</a>
             <a href="../login/login.html">Login</a>
         </nav>
+
+        <button class="botao-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
 
     <main>
@@ -82,47 +88,51 @@
 
         </section>
 
-        <section class="livros" id="acervo">
+        <section class="acervo" id="acervo">
             <div class="titulo-secao">
                 <h2>Top livros recomendados</h2>
                 <span></span>
             </div>
 
-            <div class="livros-lista">
+            <div class="livros">
 
                 <article class="livro">
-                    <img src="../imgs/livro-aescoladobememal.svg" alt="Livro A escola do bem e do mal">
+                    <img src="../imgs/livro-aescoladobememal.svg" alt="">
                     <h3>A escola do bem e do mal</h3>
-                    <div class="livro-info">
+
+                    <div class="livro-texto">
                         <h4>Autor(a):</h4>
                         <p>Soman Chainani</p>
                     </div>
                 </article>
 
                 <article class="livro">
-                    <img src="../imgs/livro-filhasdalua.svg" alt="Livro A escola do bem e do mal">
+                    <img src="../imgs/livro-filhasdalua.svg" alt="">
                     <h3>Filhas da Lua</h3>
-                    <div class="livro-info">
+
+                    <div class="livro-texto">
                         <h4>Autor(a):</h4>
                         <p>Carolina França</p>
                     </div>
                 </article>
 
                 <article class="livro">
-                    <img src="../imgs/livro-ti.svg" alt="Livro A escola do bem e do mal">
-                    <h3>TI para negócios</h3>
-                    <div class="livro-info">
+                    <img src="../imgs/livro-ti.svg" alt="">
+                    <h3>TI para Negócios</h3>
+
+                    <div class="livro-texto">
                         <h4>Autor(a):</h4>
                         <p>Edson Perin</p>
                     </div>
                 </article>
 
                 <article class="livro">
-                    <img src="../imgs/livro-mestredotempo.svg" alt="Livro A escola do bem e do mal">
-                    <h3>Mestre do tempo</h3>
-                    <div class="livro-info">
+                    <img src="../imgs/livro-mestredotempo.svg" alt="">
+                    <h3>Mestres do Tempo</h3>
+
+                    <div class="livro-texto">
                         <h4>Autor(a):</h4>
-                        <p>Alessandra Garcia</p>
+                        <p>R.V. Campbell</p>
                     </div>
                 </article>
 
@@ -131,45 +141,48 @@
 
     </main>
 
-    <footer class="rodape">
-        <section class="rodape-conteudo">
-            <div class="icons-rodape">
-                <img src="../imgs/Logo Horizontal - branca.svg" alt="Logo horizontal bibliotec">
-                <img src="../imgs/SENAI_São_Paulo_logo 1.svg" alt="Logo SENAI">
+    <footer>
+        <section class="main">
+            <div class="rodape-logos">
+                <img src="../imgs/Logo Horizontal - branca.svg" alt="Bibliotec" />
+                <img src="../imgs/SENAI_São_Paulo_logo 1.svg" alt="SENAI" />
             </div>
-            <div class="links-rodape">
 
-                <div class="links">
-                    <h3>Biblioteca</h3>
-                    <a>Baixar aplicativo</a>
-                    <a>Suporte ao usuário</a>
-                </div>
-
-                <div class="links">
-                    <h3>Quem somos</h3>
-                    <a>Baixar aplicativo</a>
-                    <a>Suporte ao usuário</a>
-                </div>
-
-                <div class="links">
-                    <h3>Siga nas redes sociais</h3>
-                </div>
-
-                <div class="links-icons">
-                    <a><img src="../imgs/icone-facebook.svg" alt="Facebook"></a>
-                    <a><img src="../imgs/icone-instagram.svg" alt="Instagram"></a>
-                    <a><img src="../imgs/icone-linkedin.svg" alt="Linkedin"></a>
-                </div>
+            <div class="rodape-informacoes">
+                <nav class="nav-footer">
+                    <p>Biblioteca</p>
+                    <a href="#">Baixar aplicativos</a>
+                    <a href="#">Suporte ao usuário</a>
+                </nav>
+                <nav class="nav-footer">
+                    <p>Quem somos</p>
+                    <a href="# ">Clientes</a>
+                    <a href="#">Benefícios</a>
+                </nav>
+                <p>Siga nas redes sociais</p>
+                <nav class="rodape-icones">
+                    <a href="#facebook">
+                        <img src="../imgs/icone-facebook.svg" alt=" Icone do Facebook" />
+                    </a>
+                    <a href="#instagram">
+                        <img src="../imgs/icone-instagram.svg" alt="Icone do Instagram" />
+                    </a>
+                    <a href="#linkedin">
+                        <img src="../imgs/icone-linkedin.svg" alt="Linkedin" />
+                    </a>
+                </nav>
             </div>
         </section>
+
         <span></span>
-        <section class="rodape-info">
-            <a>©Biblio Tec</a>
-            <div class="documentos">
-                <a>Acessibilidade</a>
-                <a>Politica de Privacidade</a>
-                <a>Termos e condições</a>
-            </div>
+
+        <section class="footer-inferior">
+            <p>&copy; Biblio Tec</p>
+            <nav class="footer">
+                <a href="#">Acessibilidade</a>
+                <a href="#">Politica de Privacidade</a>
+                <a href="#">Termos e condições</a>
+            </nav>
         </section>
     </footer>
 </body>

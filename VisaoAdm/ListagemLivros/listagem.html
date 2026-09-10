@@ -39,7 +39,7 @@
                 <span>Listar Usuários</span>
             </a>
 
-            <a href="#" class="item-menu">
+            <a href="../CadastrarLivros/cadastrar.html" class="item-menu">
                 <i class="fa-solid fa-book-medical"></i>
                 <span>Cadastrar Livro</span>
             </a>
@@ -55,7 +55,6 @@
             </a>
         </nav>
 
-        <!-- SAIR -->
         <a href="../../login/login.html" class="botao-sair">
             <i class="fa-solid fa-right-from-bracket"></i>
             <span>Sair</span>
@@ -68,7 +67,6 @@
             <p>Gerencie e acompanhe os livros cadastrados</p>
         </section>
 
-        <!-- CARD PRINCIPAL -->
         <section class="card-listagem">
 
             <div class="area-busca">
@@ -83,7 +81,6 @@
                 </button>
             </div>
 
-            <!-- CABEÇALHO DA LISTA -->
             <div class="cabecalho-lista">
                 <h2>Nome</h2>
                 <h2>Reservado</h2>
@@ -92,7 +89,6 @@
                 <h2>Detalhes</h2>
             </div>
 
-            <!-- LIVROS -->
             <div class="lista-livros">
                 <article class="livro">
                     <p class="nome-livro">TI para negócios</p>
@@ -150,22 +146,122 @@
                     </button>
                 </article>
 
+                <article class="livro">
+                    <p class="nome-livro">TI para negócios</p>
+                    <input type="checkbox">
+                    <p class="categoria-livro">TI</p>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </article>
+
+                <article class="livro">
+                    <p class="nome-livro">TI para negócios</p>
+                    <input type="checkbox">
+                    <p class="categoria-livro">TI</p>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </article>
+
+                <article class="livro">
+                    <p class="nome-livro">TI para negócios</p>
+                    <input type="checkbox">
+                    <p class="categoria-livro">TI</p>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </article>
+
+                <article class="livro">
+                    <p class="nome-livro">TI para negócios</p>
+                    <input type="checkbox">
+                    <p class="categoria-livro">TI</p>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </article>
+
+                <article class="livro">
+                    <p class="nome-livro">TI para negócios</p>
+                    <input type="checkbox">
+                    <p class="categoria-livro">TI</p>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </article>
+
+                <article class="livro">
+                    <p class="nome-livro">TI para negócios</p>
+                    <input type="checkbox">
+                    <p class="categoria-livro">TI</p>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </article>
+
+                <article class="livro">
+                    <p class="nome-livro">TI para negócios</p>
+                    <input type="checkbox">
+                    <p class="categoria-livro">TI</p>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+
+                    <button class="botao-acao">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </article>
+
             </div>
 
             <div class="rodape-listagem">
                 <p class="quantidade-livros">Mostando 4 de 4 livros</p>
 
                 <div class="paginacao">
-                    <button class="botao-pagina">
+                    <button id="left" class="botao-pagina">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
                     <span class="pagina-atual">1</span>
-                    <button class="botao-pagina">
+                    <button id="right" class="botao-pagina">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="listagem.js"></script>
 </body>
 </html>
