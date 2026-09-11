@@ -391,9 +391,6 @@ footer span {
         align-items: flex-end;
         gap: 20px;
         z-index: 100;
-    }
-
-    .ocultar-nav {
         display: none;
     }
 
