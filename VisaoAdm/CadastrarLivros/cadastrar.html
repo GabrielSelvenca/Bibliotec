@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Livros</title>
-    <link rel="stylesheet" href="cadastrar.css">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="cadastrar.css">
 
     <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
 
@@ -57,7 +57,6 @@
             </a>
         </nav>
 
-        <!-- SAIR -->
         <a href="../../login/login.html" class="botao-sair">
             <i class="fa-solid fa-right-from-bracket"></i>
             <span>Sair</span>
@@ -78,33 +77,51 @@
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" placeholder="Ex.: Dom Casmurro">
                     </div>
+
                     <div class="campo">
                         <label for="foto">Foto da capa</label>
                         <input type="file" id="foto">
                     </div>
+
                     <div class="campo">
                         <label for="escritor">Escritor(a)</label>
                         <input type="text" id="escritor" placeholder="Ex.: Machado de Assis">
                     </div>
+
                     <div class="campo">
                         <label for="idioma">Idioma</label>
                         <input type="text" id="idioma" placeholder="Ex.: Português">
                     </div>
+
                     <div class="campo">
                         <label for="editora">Editora</label>
                         <input type="text" id="editora" placeholder="Ex.: Companhia de Letras">
                     </div>
+
                     <div class="campo">
                         <label for="categorias">Categorias</label>
-                        <select name="categorias" id="categorias">
-                            <option disabled selected>Escolha uma categoria</option>
-                            <option value="TI">TI</option>
-                            <option value="Fantasia">Fantasia</option>
-                            <option value="Terror">Terror</option>
-                            <option value="Romance">Romance</option>
-                        </select>
+                        <div class="campo-drop">
+                            <select name="categorias" id="categorias">
+                                <option disabled selected>Escolha uma categoria</option>
+                                <option value="TI">TI</option>
+                                <option value="Fantasia">Fantasia</option>
+                                <option value="Terror">Terror</option>
+                                <option value="Romance">Romance</option>
+                            </select>
+                            <i class="fa-solid fa-circle-chevron-down"></i>
+                        </div>
                     </div>
                 </div>
+
+                <div class="campo-texto-area">
+                    <label for="descricao">Descrição</label>
+                    <textarea name="descricao" id="descricao"
+                        placeholder="Escreva uma breve descrição do livro."></textarea>
+                </div>
+
+                <button class="salvar" type="submit">
+                    Salvar
+                </button>
             </form>
         </section>
     </main>
