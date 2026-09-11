@@ -371,7 +371,6 @@ footer span {
     .cabecalho {
         padding: 0 40px;
         position: relative;
-
     }
 
     .botao-menu {
@@ -392,7 +391,10 @@ footer span {
         align-items: flex-end;
         gap: 20px;
         z-index: 100;
-        display: none
+    }
+
+    .ocultar-nav {
+        display: none;
     }
 
     .navegacao.ativo {
